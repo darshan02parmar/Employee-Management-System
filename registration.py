@@ -8,7 +8,7 @@ def send_email(email_address):
     #E-mail Configurtaion
     smtp_server='smtp.gmail.com'
     smtp_port=465
-    smtp_username="darshan0302parmar@gmail.com"
+    smtp_username=""
     smtp_password=""
     subject="Registration Successful"
     body=f'Hello,\n\nThank you for rugistering your email {email_address} has Successfully rugistered.'
