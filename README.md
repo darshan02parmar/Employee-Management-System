@@ -46,8 +46,9 @@ cd EmployeeManagementSystem
 ### Install the required dependencies:
 `pip install -r requirements.txt`
 
-### Launch the application by running : `python main.py`
-
+### Launch the application by running :
+`python main.py`
+```
 1. **Add employee details** such as:
    - Name  
    - Email  
