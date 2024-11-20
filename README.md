@@ -75,5 +75,5 @@ python emsdb.py
 
 ### ID Card Example:
 
-_(Add a screenshot of a generated ID card here)_  
+![IdCard](https://github.com/user-attachments/assets/561d565c-e82b-45cb-8d5a-ef9652f2defc)
 
