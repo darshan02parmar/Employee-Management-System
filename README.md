@@ -38,19 +38,28 @@ User-friendly and responsive graphical interface powered by Tkinter.
 
 ## 💻 Installation
 
-1. **Launch the application** by running `python main.py`.
-2. **Add employee details** such as:
+### Clone the Repository:
+
+git clone https://github.com/yourusername/EmployeeManagementSystem.git
+cd EmployeeManagementSystem
+
+### Install the required dependencies:
+pip install -r requirements.txt
+
+### Launch the application by running : `python main.py`
+
+1. **Add employee details** such as:
    - Name  
    - Email  
    - Contact  
    - Department  
-3. Use buttons to perform CRUD operations:
+2. Use buttons to perform CRUD operations:
    - **Add Details**: Add a new employee.  
    - **Update Details**: Modify an existing record.  
    - **Delete Details**: Remove an employee from the database.  
    - **Clear Details**: Reset the form fields.  
-4. Export employee records to a `.csv` file using the **Export CSV** button.  
-5. Generate an ID card for an employee by clicking the **Generate ID** button.  
+3. Export employee records to a `.csv` file using the **Export CSV** button.  
+4. Generate an ID card for an employee by clicking the **Generate ID** button.  
 
 ---
 
