@@ -10,17 +10,18 @@ class Database:
                     email TEXT,
                     contact TEXT,
                     gender TEXT,
-                    address TEXT
+                    address TEXT,
+                    department TEXT
                     )
                 """
         self.cur.execute(sql)
         self.con.commit()
         
     # Insert Function
-    def insert(self, name, code, email, contact, gender, address):
+    def insert(self, name, code, email, contact, gender, address, department):
         self.cur.execute(
-        "INSERT INTO employee (name, code, email, contact, gender, address) VALUES (?, ?, ?, ?, ?, ?)",
-        (name, code, email, contact, gender, address))
+        "INSERT INTO employee (name, code, email, contact, gender, address, department) VALUES (?, ?, ?, ?, ?, ?, ?)",
+        (name, code, email, contact, gender, address, department))
         self.con.commit()
 
     
@@ -36,9 +37,11 @@ class Database:
         self.con.commit()
 
     # Update a Record in DB
-    def update(self, id, name, code, email, contact, gender, address):
+    def update(self, id, name, code, email, contact, gender, address, department):
         self.cur.execute(
-        "UPDATE employee SET name=?, code=?, email=?, contact=?, gender=?, address=? WHERE id=?",
-        (name, code, email, contact, gender, address, id))
+        "UPDATE employee SET name=?, code=?, email=?, contact=?, gender=?, address=?, department=? WHERE id=?",
+        (name, code, email, contact, gender, address, department, id))
         self.con.commit()
+
+
 
