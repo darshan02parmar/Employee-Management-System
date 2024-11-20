@@ -70,7 +70,8 @@ python emsdb.py
 
 ### Dashboard Interface:
 
-_(Add a screenshot of the main interface here)_  
+![First look]("C:\Users\Dasrshan\Pictures\Saved Pictures\Dashboard.png")
+
 
 ### ID Card Example:
 
