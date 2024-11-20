@@ -1,3 +1,4 @@
+![Dashboard](https://github.com/user-attachments/assets/bc12dc86-babe-400b-a2b9-ce4fc8c83eba)
 # Employee Management System 🏢
 
 An interactive and feature-rich **Employee Management System** built using **Python's Tkinter library** for the GUI and **SQLite** for database management. This application simplifies employee record management and offers functionalities such as adding, updating, deleting, exporting records, and generating employee ID cards.
