@@ -38,10 +38,10 @@ User-friendly and responsive graphical interface powered by Tkinter.
 
 ## 💻 Installation
 
-### Clone the Repository:
-
+### Clone the Project
+```bash
 git clone https://github.com/darshan02parmar/EmployeeManagementSystem.git
-`cd EmployeeManagementSystem`
+cd EmployeeManagementSystem
 
 ### Install the required dependencies:
 `pip install -r requirements.txt`
