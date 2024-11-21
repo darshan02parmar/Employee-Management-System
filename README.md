@@ -42,6 +42,8 @@ User-friendly and responsive graphical interface powered by Tkinter.
 ### Clone the Project
 ```bash
 git clone https://github.com/darshan02parmar/Employee-Management-System.git
+```
+```
 cd Employee-Management-System
 ```
 ### Install the required dependencies:
