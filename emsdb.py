@@ -298,7 +298,7 @@ tv.heading("Email", text="Email", anchor=CENTER)
 tv.heading("Contact", text="Contact", anchor=CENTER)
 tv.heading("Gender", text="Gender", anchor=CENTER)
 tv.heading("Department", text="Department", anchor=CENTER)
-tv.heading("Address", text="Address", anchor=W)  # Changed to W (left alignment)
+tv.heading("Address", text="Address", anchor=W)  
 
 # Set column widths and alignments
 tv.column("ID", width=20, minwidth=20, anchor=W)
