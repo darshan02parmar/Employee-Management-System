@@ -39,10 +39,20 @@ User-friendly and responsive graphical interface powered by Tkinter.
 ## 💻 Installation
 
 ### Clone the Project
-
+```bash
+git clone https://github.com/darshan02parmar/Employee-Management-System.git
+```
+```
+cd Employee-Management-System
+```
 ### Install the required dependencies:
-
+```
+pip install -r requirements.txt
+```
 ### Launch the application by running :
+```
+python emsdb.py
+```
 
 ## ✨ How to Use
 
