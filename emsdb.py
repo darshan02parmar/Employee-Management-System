@@ -82,10 +82,10 @@ def getData(event):
     code.set(row[2])
     email.set(row[3])
     contact.set(row[4])
-    gender.set(row[5])  
-    department.set(row[7])  
+    gender.set(row[5])
+    department.set(row[6])
     txtAddress.delete(1.0, END)
-    txtAddress.insert(END, row[6])  
+    txtAddress.insert(END, row[7])
 
 def delete_employee():
     if not row:
@@ -105,8 +105,8 @@ def displayAll():
             row[3],     # Email
             row[4],     # Contact
             row[5],     # Gender
-            row[7],     # Department
-            row[6]      # Address
+            row[6],     # Department
+            row[7]      # Address
         ))
 
 def update_employee():
@@ -116,7 +116,7 @@ def update_employee():
     if txtName.get() == "" or txtCode.get() == "" or txtEmail.get() == "" or txtContact.get() == "" or txtAddress.get(1.0, END).strip() == "" or gender.get() == "" or txtDepartment.get() == "":
         messagebox.showerror("Error in Input", "Please fill all the details")
         return
-    db.update(row[0], txtName.get(), txtCode.get(), txtEmail.get(), txtContact.get(), gender.get(), txtAddress.get(1.0, END), txtDepartment.get())
+    db.update(row[0], txtName.get(), txtCode.get(), txtEmail.get(), txtContact.get(), gender.get(), txtDepartment.get(), txtAddress.get(1.0, END))
     messagebox.showinfo("Success", "Record Updated")
     clearAll()
     displayAll()
@@ -125,7 +125,7 @@ def add_employee():
     if txtName.get() == "" or txtCode.get() == "" or txtEmail.get() == "" or txtContact.get() == "" or txtAddress.get(1.0, END).strip() == "" or gender.get() == "" or txtDepartment.get() == "":
         messagebox.showerror("Error in Input", "Please fill all the details")
         return
-    db.insert(txtName.get(), txtCode.get(), txtEmail.get(), txtContact.get(), gender.get(), txtAddress.get(1.0, END), txtDepartment.get())
+    db.insert(txtName.get(), txtCode.get(), txtEmail.get(), txtContact.get(), gender.get(), txtDepartment.get(), txtAddress.get(1.0, END))
     messagebox.showinfo("Success", "Record Inserted")
     clearAll()
     displayAll()
