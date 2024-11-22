@@ -35,7 +35,6 @@ User-friendly and responsive graphical interface powered by Tkinter.
 - **File Handling**: CSV for exporting data  
 
 ---
-## ✨ How to Use
 
 ## 💻 Installation
 
@@ -54,6 +53,8 @@ pip install -r requirements.txt
 ```
 python emsdb.py
 ```
+## ✨ How to Use
+
 1. **Add employee details** such as:
    - Name  
    - Email  
