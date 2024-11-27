@@ -143,7 +143,6 @@ def clearAll():
 
 def export_to_csv():
     try:
-        
         file_path = filedialog.asksaveasfilename(
             defaultextension='.csv',
             filetypes=[("CSV files", "*.csv"), ("All files", "*.*")],
@@ -156,15 +155,23 @@ def export_to_csv():
             
             # Write to CSV file
             with open(file_path, 'w', newline='', encoding='utf-8') as file:
-                writer = csv.writer(file)
-              
-                writer.writerow(['ID', 'Name', 'Code', 'Email', 'Contact', 'Gender', 'Address', 'Department'])
-               
-                writer.writerows(data)
+                writer = csv.writer(file, quoting=csv.QUOTE_ALL)  # Add QUOTE_ALL to properly handle multiline text
+                
+                # Write headers
+                writer.writerow(['ID', 'Name', 'Code', 'Email', 'Contact', 'Gender', 'Department', 'Address'])
+                
+                # Process and write data rows
+                for row in data:
+                    # Replace any newlines in the address with space
+                    processed_row = list(row)
+                    if processed_row[7]:  # Address is at index 7
+                        processed_row[7] = processed_row[7].replace('\n', ' ').strip()
+                    writer.writerow(processed_row)
                 
             messagebox.showinfo("Success", "Data exported successfully!")
     except Exception as e:
         messagebox.showerror("Error", f"An error occurred: {str(e)}")
+
 
 def generate_id_card():
     if not row:
